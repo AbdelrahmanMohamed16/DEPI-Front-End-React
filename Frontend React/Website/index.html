@@ -1,0 +1,172 @@
+<!-- tags <start> content </end> -->
+<!-- nested tag has an end point(tag) otherwise empty tag has no end point-->
+<!-- seo => search engine optimization -->
+<!-- html element is the tag with attributes and content otherwise tag is just the html construction -->
+<!-- doctype defines html version-->
+<!-- HTML5 -->
+<!-- semantic tags -->
+<!-- header, section, nav, footer, figure, img, table, form, aside, article, video, source helps SEO -->
+<!-- <header></header>
+<section></section>
+<nav></nav>
+<footer></footer>
+<figure></figure>
+<img src="" alt="">
+<table></table>
+<form action=""></form>
+<aside></aside>
+<article></article>
+<video width="" height="" controls muted loop autoplay><source src="" type="video/mp4"/></video>
+<form></form>
+<source> -->
+<!Doctype html>
+<html>
+    <head>
+        <!-- internal style -->
+        <style></style>
+        <!-- external style -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1 style="text-align: center;">Session 1 friday 19/4/2024</h1>
+        <!-- inline style -->
+        <h1 style="color:blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iusto?</h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+        <!-- seo searches first on h1 cause it must be the first subject title that will decide if 
+        this page will appear first in the search engine or not -->
+        <p></p>
+        <!-- paragraph typically should not be on h1 but it may appear as a description for the subject title -->
+        <!-- tags has attributes such as img tag src attribute there's alt attribute and it used to put an alternative to the img
+        if it doesn't appear for any reason and it used by seo to define images for search engines -->
+        <img src="" alt="">
+        <!-- a tag is used to create a hyperlink to another webpage or website  and it has
+        href attribute that is the address that this link directing to and another important attribute which is target that 
+        defines that is directing to the the same page _self and new tab _blank -->
+        <a href="" target="_self"></a>
+        <h4>Front-End</h4>
+        <!-- unordered/ordered list to make nested list you should add the nested list inside it's li element it is related to for SEO-->
+        <ul>
+            <li>HMTL
+                <ul>
+                    <li>Tags
+                        <ul>
+                            <li>Nested Tags</li>
+                            <li>Empty Tags</li>
+                        </ul>
+                    </li>
+                    <li>Elements</li>
+                </ul>
+            </li>
+            <li>CSS</li>
+            <li>Java Script</li>
+        </ul>
+        <!-- type attribute for ol tag defines which way/shape of ordering will happen -->
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+        </ol>
+        <!-- inputs  need labels to define what will be entered in this input field
+        and input tag has type attribute defines the type of entered data another attribute
+        is id that used to link the label to the input field another attribute is name
+        and is used to define the entered data name that will be transfered with to the backend-->
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname"/>
+        <br>
+        <br>
+
+        <h1>Form</h1>
+        <form action="">
+            <input type="color" name="color" id="">
+            <hr/>
+
+            <input type="file" accept="application/.pptx" name="file" id="" multiple>
+            <hr/>
+
+            <label>Skills: </label>
+            <input type="checkbox" id="html" name="skills" value="html"/>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css"/>
+            <label for="css">css</label>
+            <input type="checkbox" id="js" name="skills" value="js"/>
+            <label for="js">js</label>
+            <hr/>
+
+            <label>Gender: </label>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <hr/>
+
+            <select name="country">
+                <option value="Eg">Egypt</option>
+                <option value="Fr">France</option>
+                <option value="Em">Emirates</option>
+            </select>
+            <hr/>
+
+            <label for="ffname">Form First Name: </label>
+            <input type="text" id="ffname" name="firstname"/>
+            <br>
+            <br>
+
+            <label for="age">Form Age: </label>
+            <input type="number" id="age" name="age"/>
+            <br>
+            <br>
+
+            <label for="Email">Form Email: </label>
+            <input type="email" id="Email" name="Email"/>
+            <br>
+            <br>
+
+            <label for="password">Form Password: </label>
+            <input type="password" id="password" name="password"/>
+            <br>
+            <br>
+
+            <label for="desc">description: </label>
+            <br>
+            <textarea name="desc" id="" cols="10" rows="10" id="desc"></textarea>
+            <br>
+            <br>
+
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+        <hr>
+        <hr>
+        <hr>
+        <h1 style="text-align: center;">Session 2 tuesday 23/4/2024</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2 class="custom_color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2 class="custom_color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <hr>
+        <hr>
+        <h2 class="one two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sint.
+        </h2>
+        <hr><hr>
+        <div class="first_div">
+            <div class="second_div"></div>
+        </div>
+
+    </body>
+</html>
