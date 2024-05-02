@@ -1,0 +1,147 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text";
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+}
+svg {
+    width: 30px;
+    height: 20px;
+}
+hr {
+    margin: 2% 0;
+}
+.clr {
+    clear: both;
+}
+.container {
+    padding: 10px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.black_section {
+    color: #fff;
+    background-color: #000;
+}
+.black_card {
+    color: #fff;
+    background-color: #000;
+}
+.half_width_card {
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+.bold {
+    font-weight: 700;
+}
+ul {
+    list-style-type: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(251, 251, 253,0.9);
+    z-index: 100000;
+}
+nav {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.logo {
+    float: left;
+    margin-right: 40px;
+}
+.menu {
+    float: left;
+}
+.link {
+    float: left;
+    margin-right: 40px;
+}
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 20px 0;
+}
+.desc {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+section {
+    padding: 2% 0 0 0;
+    text-align: center;
+    overflow: none;
+}
+section button {
+    background-color: #0077ED;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 40px;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+.product_card {
+    padding: 2% 0 0 0;
+}
+.product_card .hero_img {
+    width: 100%;
+}
+.tv_card {
+    height: 473px;
+    background-image: url(../img/tile__cauwwcyyn9hy_xlarge.jpg);
+    position: relative;
+}
+.tv_card .card_content {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+}
+footer {
+    color: #000;
+    padding: 2% 0;
+}
+footer .container {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+footer ul{
+    float: left;
+    width: 25%;
+}
+footer .container img {
+    width: 50%;
+    float: left;
+}
+footer .container form {
+    width: 50%;
+    float: right;
+}
+footer .container input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 40px; 
+}
+footer .container button {
+    background-color: #0077ED;
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 12px 20px;
+    border-radius: 40px; 
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
