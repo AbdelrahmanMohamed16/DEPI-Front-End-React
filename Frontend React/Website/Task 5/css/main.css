@@ -1,0 +1,293 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    overflow: none;
+}
+body {
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 545;
+    font-size: 0.95em;
+}
+span {
+    color: #02FAEE;
+}
+.clr {
+    clear: both;
+}
+.container {
+    padding: 10px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
+.white{
+    color: white;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(58, 115, 130,0.8);
+    z-index: 9999;
+}
+nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.logo {
+    float: left;
+    margin-right: 40px;
+}
+.logo a{
+    font-size: 2.0em;
+    font-weight: 650;
+}
+.menu {
+    margin-top: 0.6em;
+    float: right;
+}
+.link {
+    float: left;
+    margin-right: 40px;
+}
+.hero-title {
+    font-size: 3.2em;
+    font-weight: 800;
+    line-height: 1.3px;
+    margin: 20px 0;
+}
+.hero-desc {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.title {
+    font-size: 2em;
+    font-weight: 700;
+}
+.title2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.desc {
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+section {
+    padding: 6% 0 ;
+    overflow: none;
+}
+.cards {
+    margin: 40px;
+}
+.card {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 0.7em 0em rgb(0, 0, 0,0.2);
+    background-color: white;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+}
+.card a {
+    display: inline-block;
+    color: black;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    position: relative;
+}
+.card  a::after {
+    content: "→";
+    position: absolute;
+}
+h1 .first-line::after{
+    content: " ";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    border-radius: 18px;
+    top: 50px;
+    left: 22.5%;
+    background-color: #000;
+}
+h1 .middle-line::after{
+    content: " ";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    border-radius: 18px;
+    top: 70px;
+    left: 22.5%;
+    background-color: #000;
+}
+h1 .last-line::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 18px;
+    top: 60px;
+    left: 0;
+    background-color: #000;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.first-section {
+    padding: 15em 0 2em;
+    background-image: url("../img/1st-section.jpg");
+    background-size: cover;
+}
+.first-section .hero-text {
+    text-align: center;
+}
+.first-section h1 {
+    letter-spacing: 0.3em;
+    font-weight: 800;
+    padding: 0 0 0.5em 0 ;
+    line-height: 1.3em;
+}
+.first-section span {
+    font-weight: 800;
+}
+.first-section .container {
+    margin: 15em auto 0;
+    padding: 3em;
+    background-color: white;
+    box-shadow: 0 0 0.7em 0.1em #000 ;
+    border-radius: 3px;
+}
+
+.first-section .container .inputs .input {
+    float: left;
+    width: 33%;
+}
+.first-section .container .inputs .input input {
+    width: 70%;
+    margin: 0.5em 0 0.5em 0.2em;
+    padding: .5em 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.first-section .container .selects select {
+    float: left;
+    width: 22.5%;
+    padding: .5em 1em;
+    margin: 0 2.5% 0  0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+button {
+    display: block;
+    margin: 1.5em auto 0 auto;
+    padding: .5em 1em;
+    background-color: #000;
+    color: white;
+    border: 1px solid rgba(0, 0, 0);
+    border-radius: 3px;
+}
+.section-title {
+    text-align: center;
+    margin: 0 0 5em 0;
+}
+.section-title h1 {
+    position: relative;
+    display: inline-block;
+}
+.second-section .second-container .text {
+    float: left;
+    width: 45%;
+}
+.second-section .second-container .img {
+    float: right;
+    width: 45%;
+}
+.second-section .second-container .img img {
+    width: 100%;
+}
+.third-section  {
+    background-image: linear-gradient(to bottom, rgb(119, 199, 214,1),rgb(232, 232, 233) );
+}
+.third-section .third-container .text {
+    float: left;
+    width: 45%;
+}
+.third-section .third-container .vid {
+    float: right;
+    width: 45%;
+}
+.third-section .third-container .vid video {
+    width: 100%;
+}
+.fifth-section {
+    background-image: linear-gradient(to bottom, rgb(119, 199, 214,1),rgb(232, 232, 233) );
+}
+.fifth-section .cards .card {
+    padding: 0;
+}
+.fifth-section .cards .card .card-text {
+    padding: 0 20px 20px 20px;
+}
+.fifth-section .cards .card .card-text .title2 {
+    margin: 20px 0 5px 0;
+}
+.fifth-section .cards .card .card-text .desc {
+    font-size: 1em;
+    font-weight: 700;
+}
+.fifth-section .cards .card .card-text .desc .discount {
+    color: #000;
+    font-weight: 700;
+    position: relative;
+}
+.fifth-section .cards .card .card-text .desc .discount::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+}
+.fifth-section .cards .card .card-text button {
+    display: inline-block;
+    margin: 1.5em  0 0 0;
+}
+.sixth-section .container form .inputs .input {
+    float: left;
+    width: 100%;
+}
+.sixth-section .container form .inputs input,textarea{
+    width: 100%;
+    margin: 0.5em 0 0.5em 0.2em;
+    padding: .5em 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.sixth-section .container form .inputs .name-email-input input {
+    width: 48%;
+}
+.sixth-section .container form .inputs .name-email-input .email {
+    float: right;
+}
+.sixth-section button {
+    display: inline-block;
+    margin: 1.5em  0 0 0;
+}
