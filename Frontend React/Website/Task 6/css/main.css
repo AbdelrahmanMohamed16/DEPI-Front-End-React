@@ -1,0 +1,442 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+body {
+    height: 100vh;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    box-shadow: 0 0 6em 0.1em rgb(0, 0, 0,0.2)
+}
+a {
+    text-decoration: none;
+    color: #192A56;
+}
+button {
+    cursor: pointer;
+    background-color: #192A56;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 140px;
+    transition: 0.3s all;
+}
+button:hover {
+    background-color: #46BB2E;
+}
+section {
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0;
+}
+.material-symbols-outlined {
+  color: black;
+}
+.header-title {
+    color: #192A56;
+    font-size: 25px;
+    font-weight: 600;
+}
+.header-link {
+    color: #192A56;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+.title {
+    font-size: 4.5em;
+    font-weight:700;
+}
+.title2 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.disc {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.disc2 {
+    font-size: inherit;
+    font-weight: 200;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.green {
+    color: #46BB2E;
+}
+.dark-blue {
+    color: #192A56;
+}
+.grey {
+    color: #666666;
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    padding: 2em 0;
+}
+.inner {
+    width: 270px;
+    height: 450px;
+    padding: 10px 20px 10px 0;
+}
+.card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.2);
+    overflow: hidden;
+}
+.card .container {
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.card .container img {
+    height: 180px;
+    width: 80%;
+}
+.card .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card a {
+    position: absolute;
+    transition: 0.2s all;
+}
+.card .visibility {
+    top: 15px;
+    left: 0;
+    transform: translateX(-40px);
+    background-color: #E5E6EA;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+.card .favorite {
+    top: 15px;
+    right: 0;
+    transform: translateX(40px);
+    background-color: #E5E6EA;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+.card:hover .visibility {
+    transform: translateX(30px);
+}
+.card:hover .favorite {
+    transform: translateX(-30px);
+}
+.card .visibility:hover {
+    background-color: #46BB2E;
+}
+.card .favorite:hover {
+    background-color: #46BB2E;
+}
+.card .visibility:hover span {
+    color: #fff;
+}
+.card .favorite:hover span{
+    color: #fff;
+}
+.section-title {
+    padding: 3em;
+}
+.section-title h2 {
+    position: relative;
+}
+.section-title h2::after {
+    content: " ";
+    position: absolute;
+    height: 8px;
+    width: 70%;
+    border: 3px solid #46BB2E;
+    border-right: 0;
+    border-left: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-title h2::before {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-bottom: 3px solid #46BB2E;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.logo-img {
+    width: 30px;
+    height: 30px;
+}
+.links {
+    width: 35%;
+    display: flex;
+    justify-content: start;
+}
+.links ul {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul li {
+    padding: 0.5em;
+}
+.links ul li:first-child {
+    background-color: #46BB2E;
+    border-radius: 10px;
+}
+.links ul li:first-child a {
+    color: #fff;
+}
+.links ul:not(li:first-child) :hover {
+    background-color: #46BB2E;
+    border-radius: 10px;
+}
+.links ul:not(li:first-child) :hover a {
+    color: #fff;
+}
+.icons {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.icons ul {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    background-color: #E5E6EA;
+    border-radius: 50%;
+}
+.icons ul li a span {
+    transition: 0.5s all;
+}
+.icons ul li:hover a span {
+    transform: rotate(360deg);
+    color: #fff;
+}
+.icons ul li:hover {
+    background-color: #46BB2E;
+}
+.home-section {
+    display: flex;
+    justify-content: center;
+}
+.half-width-text {
+    width: 50%;
+}
+.half-width-img {
+    width: 50%;
+}
+.half-width-img img {
+    width: 100%;
+}
+.home-section .container .half-width-text {
+    display: flex;
+    flex-flow: column;
+    height: 55%;
+    justify-content: space-between;
+    padding: 2.5em 0 0 0;
+}
+.home-section .container .half-width-text button:hover {
+    width: 150px;
+    background-color: #46BB2E;
+    letter-spacing: 1.2px;
+}
+.dishes-section{
+    background-color: #F9F5F5;
+}
+.dishes-section .container {
+    flex-flow: column;
+    align-items: center;
+}
+.dishes {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.aboutus-section .container {
+    flex-flow: column;
+    align-items: center;
+}
+.aboutus-section .container .aboutus {
+    display: flex;
+    padding: 2em 0;
+}
+.aboutus-section .container .aboutus img {
+    width: 50%;
+    height: 400px;
+}
+.aboutus-section .container .aboutus .aboutus-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    line-height: 1.5em;
+}
+.aboutus-section .container .aboutus .aboutus-text .advantages-cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+.aboutus-section .container .aboutus .aboutus-text .advantages-cards .inner {
+    width: 33.3%;
+    height: 90px;
+}
+.aboutus-section .container .aboutus .aboutus-text .advantages-cards .advantages-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #192A56;
+    border-radius: 5px;
+    padding: 0 2.5em;
+    background-color: #F9F5F5;
+}
+.aboutus-section .container .aboutus .aboutus-text .advantages-cards .advantages-card p span {
+    align-self: flex-start;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+.review-section{
+    background-color: #F9F5F5;
+}
+.review-section .container {
+    flex-flow: column;
+    align-items: center;
+}
+.review-section .container .dishes .cards .inner {
+    height: 500px;
+}
+.review-section .container .dishes .cards .inner .card .card-text {
+    height: 220px;
+}
+.review-section .container .dishes .cards .inner .card img{
+    width: 100%;
+    height: 200px;
+}
+.review-section .container .dishes .cards .inner .card .price-button {
+    display: flex;
+}
+.review-section .container .dishes .cards .inner .card .price-button button {
+    width: 50%;
+}
+.review-section .container .dishes .cards .inner .card .price-button p {
+    width: 50%;
+}
+.review-section .container .dishes .cards .inner .card .favorite {
+    top: 30px;
+    right: 30px;
+    transform: translateX(0);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+.review-section .container .dishes .cards .inner .card .favorite span {
+    transition: 0.2s all;
+}
+.review-section .container .dishes .cards .inner .card .favorite:hover {
+    background-color: #46BB2E;
+}
+.order-section{
+    background-color: #F9F5F5;
+}
+.order-section .container {
+    flex-flow: column;
+    align-items: center;
+}
+.order-section .container .form form {
+    padding: 2em;
+    margin: 1em;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.order-section .container .form form .input-div {
+    padding: 10px 10px 10px 0;
+    width: 50%;
+}
+.order-section .container .form form .input-div input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E5E6EA;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F9F5F5;
+}
+.order-section .container .form form .input-div textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #E5E6EA;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F9F5F5;
+}
+.order-section .container .form form .input-div input:focus{
+    border: 1px solid #46BB2E;
+}
+.order-section .container .form form .input-div textarea:focus{
+    border: 1px solid #46BB2E;
+}
+footer {
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+footer .container ul {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 150px;
+}
+footer .container ul li:first-child {
+    margin-bottom: 0.5em;
+}
+footer .container ul li a:hover {
+    color: #46BB2E;
+    text-decoration: underline;
+}

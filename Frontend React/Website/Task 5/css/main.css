@@ -90,11 +90,12 @@ section {
 .cards {
     margin: 40px;
 }
-.card {
-    width: 30%;
+.inner {
     float: left;
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
+    width: 33.3%;
+}
+.card {
     box-shadow: 0 0 0.7em 0em rgb(0, 0, 0,0.2);
     background-color: white;
 }
@@ -236,11 +237,11 @@ button {
 .third-section .third-container .vid video {
     width: 100%;
 }
+.forth-section .cards .card {
+    padding: 15px;
+}
 .fifth-section {
     background-image: linear-gradient(to bottom, rgb(119, 199, 214,1),rgb(232, 232, 233) );
-}
-.fifth-section .cards .card {
-    padding: 0;
 }
 .fifth-section .cards .card .card-text {
     padding: 0 20px 20px 20px;
