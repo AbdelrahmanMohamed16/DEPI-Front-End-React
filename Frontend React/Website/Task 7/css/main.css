@@ -1,0 +1,437 @@
+:root{
+    --basic-color: #20C997;
+    --secondary-color: #212529;
+    --third-color: #FFFFFF;
+    --forth-color: #6C757D;
+    --fifth-color: #DC3545; 
+    --text-1: 1rem;
+    --text-2: 1.25rem;
+    --text-3: 1.75rem;
+    --text-4: 2rem;
+    --text-5: 2.25rem;
+    --text-6: 2.75rem;
+    --text-7: 3rem;
+    --text-8: 3.5rem;
+}
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+}
+.basic-color {
+    color: var(--basic-color) !important;
+}
+.secondary-color {
+    color: var(--secondary-color) !important;
+}
+.third-color {
+    color: var(--third-color) !important;
+}
+.forth-color {
+    color: var(--forth-color) !important;
+}
+.fifth-color {
+    color: var(--fifth-color) !important;
+}
+.bg-basic-color {
+    background-color: var(--basic-color) !important;
+}
+.bg-secondary-color {
+    background-color: var(--secondary-color) !important;
+}
+.bg-third-color {
+    background-color: var(--third-color) !important;
+}
+.bg-forth-color {
+    background-color: var(--forth-color) !important;
+}
+.bg-fifth-color {
+    background-color: var(--fifth-color) !important;
+}
+.text-1 {
+    font-size: var(--text-1) !important;
+}
+.text-2 {
+    font-size: var(--text-2) !important;
+}
+.text-3 {
+    font-size: var(--text-3) !important;
+}
+.text-4 {
+    font-size: var(--text-4) !important;
+}
+.text-5 {
+    font-size: var(--text-5) !important;
+}
+.text-6 {
+    font-size: var(--text-6) !important;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.underline {
+    position: relative;
+}
+.underline::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 100%;
+    background-color: var(--forth-color);
+    opacity: 0.3;
+    z-index: 3;
+}
+.home-section {
+    background-image: url("../imgs/intro-bg.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+.darker {
+    position: relative;
+}
+.darker::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+.navbar-toggler {
+    box-shadow: none !important;
+}
+.show {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background-color: rgb(0, 0, 0);
+}
+.active {
+    color: var(--basic-color) !important;
+}
+.nav-item:hover a {
+    color: var(--basic-color) !important;
+}
+.fa-twitter:hover {
+    color: #11B1EE !important;
+}
+.fa-facebook:hover {
+    color: #0866FF !important;
+}
+.fa-dribbble:hover {
+    color: #EA4C89 !important;
+}
+.underline::after {
+    display: none;
+}
+.button {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid var(--basic-color);
+    border-radius: 50rem;
+    transition: 0.5s all;
+}
+.button:hover {
+    color: var(--third-color) !important;
+    background-color: var(--basic-color) !important;
+}
+/* 
+    I'm Simone Olivia.
+    I'm a Freelancer.
+    I'm a Photographer.
+    I'm a Designer.
+*/
+@keyframes writing-animation {
+    0% {
+        content: "";
+    }
+    0.69% {
+        content: "I";
+    }
+    1.38% {
+        content: "I'";
+    }
+    2.08% {
+        content: "I'm";
+    }
+    2.7% {
+        content: "I'm ";
+    }
+    3.47% {
+        content: "I'm S";
+    }
+    4.16% {
+        content: "I'm Si";
+    }
+    4.86% {
+        content: "I'm Sim";
+    }
+    5.5% {
+        content: "I'm Simo"
+    }
+    6.25% {
+        content: "I'm Simon"
+    }
+    6.94% {
+        content: "I'm Simone";
+    }
+    7.63% {
+        content: "I'm Simone ";
+    }
+    8.33% {
+        content: "I'm Simone O";
+    }
+    9.02% {
+        content: "I'm Simone Ol";
+    }
+    9.72% {
+        content: "I'm Simone Oli";
+    }
+    10.41% {
+        content: "I'm Simone Oliv";
+    }
+    11.1% {
+        content: "I'm Simone Olivi";
+    }
+    11.8% {
+        content: "I'm Simone Olivia";
+    }
+    12.5% {
+        content: "I'm Simone Olivia.";
+    }
+    13.19% {
+        content: "I'm Simone Olivia";
+    }
+    13.8% {
+        content: "I'm Simone Olivi";
+    }
+    14.58% {
+        content: "I'm Simone Oliv";
+    }
+    15.27% {
+        content: "I'm Simone Oli";
+    }
+    15.97% {
+        content: "I'm Simone Ol";
+    }
+    15.66% {
+        content: "I'm Simone O";
+    }
+    17.36% {
+        content: "I'm Simone ";
+    }
+    18.05% {
+        content: "I'm Simone";
+    }
+    18.75% {
+        content: "I'm Simon "
+    }
+    19.44% {
+        content: "I'm Simo"
+    }
+    20.13% {
+        content: "I'm Sim";
+    }
+    20.83% {
+        content: "I'm Si";
+    }
+    21.52% {
+        content: "I'm S";
+    }
+    22.2% {
+        content: "I'm ";
+    }
+    22.91% {
+        content: "I'm";
+    }
+    23.61% {
+        content: "I'";
+    }
+    24.3% {
+        content: "I";
+    }
+    24.9% {
+        content: "";
+    }
+    25% {
+        content: "I";
+    }
+    25.69% {
+        content: "I";
+    }
+    26.38% {
+        content: "I'";
+    }
+    27.08% {
+        content: "I'm";
+    }
+    27.7% {
+        content: "I'm ";
+    }
+    28.47% {
+        content: "I'm a";
+    }
+    29.16% {
+        content: "I'm a ";
+    }
+    29.86% {
+        content: "I'm a F";
+    }
+    30.5% {
+        content: "I'm a Fr"
+    }
+    31.25% {
+        content: "I'm a Fre"
+    }
+    31.94% {
+        content: "I'm a Free";
+    }
+    32.63% {
+        content: "I'm a Freel";
+    }
+    33.33% {
+        content: "I'm a Freela";
+    }
+    34.02% {
+        content: "I'm a Freelan";
+    }
+    34.72% {
+        content: "I'm a Freelanc";
+    }
+    35.41% {
+        content: "I'm a Freelance";
+    }
+    36.1% {
+        content: "I'm a Freelancer";
+    }
+    36.8% {
+        content: "I'm a Freelancer.";
+    }
+    37.5% {
+        content: "I'm a Freelancer.";
+    }
+    38.19% {
+        content: "I'm a Freelancer";
+    }
+    38.8% {
+        content: "I'm a Freelance";
+    }
+    39.58% {
+        content: "I'm a Freelanc";
+    }
+    40.27% {
+        content: "I'm a Freelan";
+    }
+    40.97% {
+        content: "I'm a Freela";
+    }
+    41.66% {
+        content: "I'm a Freel";
+    }
+    42.36% {
+        content: "I'm a Free";
+    }
+    43.05% {
+        content: "I'm a Fre";
+    }
+    43.75% {
+        content: "I'm a Fr"
+    }
+    44.44% {
+        content: "I'm a F"
+    }
+    45.13% {
+        content: "I'm a ";
+    }
+    45.83% {
+        content: "I'm a";
+    }
+    46.52% {
+        content: "I'm ";
+    }
+    47.2% {
+        content: "I'm";
+    }
+    47.91% {
+        content: "I'";
+    }
+    48.61% {
+        content: "I";
+    }
+    49.3% {
+        content: "";
+    }
+    49.9% {
+        content: "";
+    }
+}
+@keyframes writing-bar-animation {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+.writing-text {
+    /* width: 100%; */
+    height: 50px;
+    position: relative;
+}
+.writing-text::before {
+    content: "";
+    position: absolute;
+    font-size: var(--text-8) !important;
+    font-weight: 600 !important;
+    animation: writing-animation 12s steps(40) infinite;
+    /* width: 100%; */
+    color: var(--third-color)  !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.writing-text::after {
+    content: "|";
+    position: absolute;
+    font-size: var(--text-8) !important;
+    font-weight: 600 !important;
+    animation: writing-bar-animation 1s steps(40) infinite;
+    color: var(--third-color)  !important;
+    right: 0;
+}
+@media (max-width: 768px) {
+    .show ul .nav-item .underline {
+        position: relative;
+    }
+    .underline::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 100%;
+        background-color: var(--forth-color);
+        opacity: 0.3;
+        z-index: 3;
+    }
+}

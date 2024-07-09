@@ -97,7 +97,8 @@ section {
     padding: 2em 0;
 }
 .inner {
-    width: 270px;
+    width: 25%;
+    min-width: 270px;
     height: 450px;
     padding: 10px 20px 10px 0;
 }
@@ -346,6 +347,10 @@ section {
 .review-section .container {
     flex-flow: column;
     align-items: center;
+}
+.review-section .container .dishes {
+    display: flex;
+    justify-content: center;
 }
 .review-section .container .dishes .cards .inner {
     height: 500px;
