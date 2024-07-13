@@ -10,63 +10,149 @@
         <link rel="stylesheet" href="css/all.min.css">
     </head>
     <body>
-        <header class="position-fixed bg-transparent w-100 z-3">
-            <nav class="navbar navbar-expand-md fixed-top pt-3">
+        <header class="position-fixed w-100 z-3">
+            <nav class="navbar navbar-expand-md py-3">
                 <div class="container-fluid">
                     <div class="row justify-content-between w-100">
-                        <div class="logo col-2 d-flex">
-                            <a class="navbar-brand" href="#"><img src="imgs/logo-light.png" alt="Simone" class=""></a>
-                        </div>
-                        <div class="col-md-10 col-6 d-flex justify-content-end align-items-center">
-                            <button class="navbar-toggler border-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fa fa-bars third-color text-2" aria-hidden="true"></i>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content-center col-md-10 col-12" id="navbarCollapse">
-                                <ul class="navbar-nav m-3 col-12 m-md-0 d-flex justify-content-center">
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link active capitalize third-color text-1 underline" aria-current="page" href="#">home</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1 underline" href="#" href="#">about</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1 underline" href="#">what i do</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1 underline" href="#">resume</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1 underline" href="#">portfolio</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1 underline" href="#">client</a>
-                                    </li>
-                                    <li class="nav-item col-auto">
-                                        <a class="nav-link capitalize third-color text-1" href="#">contact</a>
-                                    </li>
-                                </ul>
+                        <div class="col-2">
+                            <div class="logo d-flex align-items-center">
+                                <a class="navbar-brand d-flex align-items-center" href="#"><img src="imgs/logo-light.png" alt="Simone" class=""></a>
                             </div>
-                            <div class="icons col-md-1 offset-md-1 col-sm-3 col-6 d-flex justify-content-center">
-                                <div class="w-100 d-flex align-baseline justify-content-between">
-                                    <a href="#" class="text-1 mx-md-1" title="twitter"><i class="fa-brands fa-twitter third-color"></i></a>
-                                    <a href="#" class="text-1 mx-md-1" title="facebook"><i class="fa-brands fa-facebook third-color"></i></a>
-                                    <a href="#" class="text-1 mx-md-1" title="dribbble"><i class="fa-brands fa-dribbble third-color"></i></a>
+                        </div>
+                        <div class="col-10">
+                            <div class="d-flex justify-content-end align-items-center h-100">
+                                <div class="col-md-10 col-12">
+                                    <div class="collapse navbar-collapse justify-content-center col-12" id="navbarCollapse">
+                                        <ul class="navbar-nav m-3  m-md-0 d-flex justify-content-center">
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link active capitalize third-color text-1 header-underline" aria-current="page" href="#">home</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1 header-underline" href="#about-section">about</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1 header-underline" href="#">what i do</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1 header-underline" href="#">resume</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1 header-underline" href="#">portfolio</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1 header-underline" href="#">client</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a class="nav-link capitalize third-color text-1" href="#">contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="navbar-toggler border-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars third-color text-2" aria-hidden="true"></i>
+                                </button>
+                                <div class="col-md-1 offset-md-1 col-sm-2 col-3">
+                                    <div class="icons d-flex justify-content-center">
+                                        <div class="w-100 d-flex align-baseline justify-content-between">
+                                            <a href="#" class="text-1 mx-md-1" title="twitter"><i class="fa-brands fa-twitter third-color"></i></a>
+                                            <a href="#" class="text-1 mx-md-1" title="facebook"><i class="fa-brands fa-facebook third-color"></i></a>
+                                            <a href="#" class="text-1 mx-md-1" title="dribbble"><i class="fa-brands fa-dribbble third-color"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </nav>
+            </nav>
         </header>
-        <section class="home-section pt-5 darker">
-            <div class="container position-relative mt-5 z-2 h-100">
-                <div class="row align-items-center h-75">
-                    <div class="home-text text-center">
-                        <h3 class="text-3 capitalize third-color my-4">welcome</h3>
-                        <h1 class="writing-text my-5"></h1>
-                        <h3 class="text-3 capitalize third-color my-4">based in Los Angeles, California.
-                        </h3>
-                        <button class="button capitalize text-2 basic-color px-4 py-2 bg-transparent my-4">hire me</button>
+        <section class="home-section pt-5 darker h-100">
+            <div class="container position-relative z-2 h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-12">
+                        <div class="home-text d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3 class="text-3 capitalize third-color my-4">welcome</h3>
+                            <h1 class="writing-text my-sm-1 my-5"></h1>
+                            <h3 class="text-3 capitalize third-color my-4">based in Los Angeles, California.
+                            </h3>
+                            <button class="button-type-1 capitalize text-2 basic-color px-4 py-2 bg-transparent my-4">hire me</button>
+                            <a class="arrow" href="#about-section"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section py-5 my-5" id="about-section">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="py-5 my-5">
+                        <div class="text-center">
+                            <h1 class="text-5 capitalize section-title-underline about-section-title secondary-color">
+                                know me more
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-8">
+                            <div>
+                                <h2 class="text-3 secondary-color">I'm <span class="text-3 basic-color">Simone Olivia</span>, a Web Developer</h2>
+                                <p class="text-1 secondary-color">
+                                    I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team.
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <p class="text-1 secondary-color">
+                                    Delivering work within time and budget which meets client’s requirements is our moto.
+                                    Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex flex-column">
+                                <ul class="w-100">
+                                    <li class="underline mb-3 pb-2"><span class="fw-bold"">Name: </span> <span class="">Simone Olivia</span></li>
+                                    <li class="underline mb-3 pb-2"><span class="fw-bold"">Email: </span> <span class="basic-color">chat@simone.com</span></li>
+                                    <li class="underline mb-3 pb-2"><span class="fw-bold"">Age: </span> <span class="">28</span></li>
+                                    <li class="pb-2"><span class="fw-bold"">From: </span> <span class="">Los Angelos, California</span></li>
+                                </ul>
+                                <button class="button-type-2 capitalize text-2 third-color py-2 bg-basic-color">download CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="featured-box text-center">
+                                    <h1 class="forth-color text-5">
+                                        10+
+                                    </h1>
+                                    <p class="capitalize forth-color">years experiance</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="featured-box text-center">
+                                    <h1 class="forth-color text-5">
+                                        250+
+                                    </h1>
+                                    <p class="capitalize forth-color">happy clients</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="featured-box text-center">
+                                    <h1 class="forth-color text-5">
+                                        650+
+                                    </h1>
+                                    <p class="capitalize forth-color">projects done</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="featured-box text-center">
+                                    <h1 class="forth-color text-5">
+                                        38+
+                                    </h1>
+                                    <p class="capitalize forth-color">get awards</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

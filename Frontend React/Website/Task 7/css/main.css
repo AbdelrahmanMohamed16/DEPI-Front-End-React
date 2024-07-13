@@ -17,14 +17,24 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
+ul{
+    padding: 0;
+}
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
 }
+button{
+    max-width: 200px;
+}
 body {
     height: 100vh;
+    transition: 0.2s all ease;
+}
+header {
+    background-color: var(--secondary-color) !important;
 }
 .basic-color {
     color: var(--basic-color) !important;
@@ -58,27 +68,56 @@ body {
 }
 .text-1 {
     font-size: var(--text-1) !important;
+    font-weight: 400 !important;
 }
 .text-2 {
     font-size: var(--text-2) !important;
+    font-weight: 400 !important;
 }
 .text-3 {
     font-size: var(--text-3) !important;
+    font-weight: 400 !important;
 }
 .text-4 {
     font-size: var(--text-4) !important;
+    font-weight: 500 !important;
 }
 .text-5 {
     font-size: var(--text-5) !important;
+    font-weight: 600 !important;
 }
 .text-6 {
     font-size: var(--text-6) !important;
+    font-weight: 700 !important;
+}
+.text-7 {
+    font-size: var(--text-6) !important;
+    font-weight: 800 !important;
+}
+.text-8 {
+    font-size: var(--text-6) !important;
+    font-weight: 900 !important;
 }
 .capitalize {
     text-transform: capitalize;
 }
 .uppercase {
     text-transform: uppercase;
+}
+.header-underline {
+    position: relative;
+}
+.header-underline::after{
+    content: " ";
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 100%;
+    background-color: var(--forth-color);
+    opacity: 0.3;
+    z-index: 3;
 }
 .underline {
     position: relative;
@@ -89,15 +128,110 @@ body {
     width: 100%;
     height: 1px;
     left: 0;
-    top: 100%;
+    top: 110%;
     background-color: var(--forth-color);
     opacity: 0.3;
     z-index: 3;
 }
+.section-title-underline {
+    position: relative;
+}
+.section-title-underline::after{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    background-color: var(--basic-color);
+}
+.about-section-title {
+    position: relative;
+}
+.about-section-title::before {
+    content: "ABOUT ME";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.what-section-title {
+    position: relative;
+}
+.what-section-title::before {
+    content: "SERVICES";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.resume-section-title {
+    position: relative;
+}
+.resume-section-title::before {
+    content: "SUMMARY";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-section-title {
+    position: relative;
+}
+.portfolio-section-title::before {
+    content: "PORTFOLIO";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.client-section-title {
+    position: relative;
+}
+.client-section-title::before {
+    content: "TESTIMONIAL";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-section-title {
+    position: relative;
+}
+.contact-section-title::before {
+    content: "CONTACT";
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    opacity: 0.1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .home-section {
     background-image: url("../imgs/intro-bg.jpg");
-    height: 100%;
-    width: 100%;
     background-size: cover;
     background-position: 20px;
     background-repeat: no-repeat;
@@ -111,7 +245,7 @@ body {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 .navbar-toggler {
@@ -120,7 +254,7 @@ body {
 .show {
     position: absolute;
     top: 100%;
-    left: 20px;
+    left: 0;
     background-color: rgb(0, 0, 0);
 }
 .active {
@@ -138,26 +272,27 @@ body {
 .fa-dribbble:hover {
     color: #EA4C89 !important;
 }
-.underline::after {
-    display: none;
-}
-.button {
+.button-type-1 {
     outline: 0;
     box-shadow: none;
     border: 1px solid var(--basic-color);
     border-radius: 50rem;
     transition: 0.5s all;
 }
-.button:hover {
+.button-type-1:hover {
     color: var(--third-color) !important;
     background-color: var(--basic-color) !important;
 }
-/* 
-    I'm Simone Olivia.
-    I'm a Freelancer.
-    I'm a Photographer.
-    I'm a Designer.
-*/
+.button-type-2 {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid var(--basic-color);
+    border-radius: 50rem;
+    transition: 0.5s all;
+}
+.button-type-2:hover {
+    background-color: rgb(38, 179, 136) !important;
+}
 @keyframes writing-animation {
     0% {
         content: "";
@@ -615,9 +750,21 @@ body {
         opacity: 0%;
     }
 }
+@keyframes arrow-move {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        top: 40px;
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .writing-text {
-    /* width: 100%; */
-    height: 50px;
+    width: 100%;
+    height: 80px;
     position: relative;
 }
 .writing-text::before {
@@ -626,12 +773,13 @@ body {
     font-size: var(--text-8) !important;
     font-weight: 600 !important;
     animation: writing-animation 12s steps(40) infinite;
-    /* width: 100%; */
+    width: 100%;
     color: var(--third-color)  !important;
     left: 50%;
     transform: translateX(-50%);
 }
-.writing-text::after {
+/* writing curser*/
+/* .writing-text::after {
     content: "|";
     position: absolute;
     font-size: var(--text-8) !important;
@@ -639,12 +787,25 @@ body {
     animation: writing-bar-animation 1s steps(40) infinite;
     color: var(--third-color)  !important;
     right: 0;
+    } */  
+.arrow {
+    display: block;
+    /* cursor: pointer; */
+    position: relative;
+    width:  25px;
+    height: 25px;
+    transform: rotateZ(45deg);
+    /* background-color: var(--third-color); */
+    top: 10px;
+    border-right: 2px solid var(--third-color);
+    border-bottom: 2px solid var(--third-color);
+    animation: arrow-move 1s steps(40) infinite;
 }
 @media (max-width: 768px) {
     .show ul .nav-item .underline {
         position: relative;
     }
-    .underline::after{
+    .header-underline::after{
         content: " ";
         position: absolute;
         display: block;
