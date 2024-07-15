@@ -3,7 +3,8 @@
     --secondary-color: #212529;
     --third-color: #FFFFFF;
     --forth-color: #6C757D;
-    --fifth-color: #DC3545; 
+    --fifth-color: #DC3545;
+    --sixth-color: #F8F9FA; 
     --text-1: 1rem;
     --text-2: 1.25rem;
     --text-3: 1.75rem;
@@ -25,9 +26,6 @@ li {
 }
 a {
     text-decoration: none;
-}
-button{
-    max-width: 200px;
 }
 body {
     height: 100vh;
@@ -51,6 +49,9 @@ header {
 .fifth-color {
     color: var(--fifth-color) !important;
 }
+.sixth-color {
+    color: var(--sixth-color) !important;
+}
 .bg-basic-color {
     background-color: var(--basic-color) !important;
 }
@@ -65,6 +66,9 @@ header {
 }
 .bg-fifth-color {
     background-color: var(--fifth-color) !important;
+}
+.bg-sixth-color {
+    background-color: var(--sixth-color) !important;
 }
 .text-1 {
     font-size: var(--text-1) !important;
@@ -276,7 +280,6 @@ header {
     outline: 0;
     box-shadow: none;
     border: 1px solid var(--basic-color);
-    border-radius: 50rem;
     transition: 0.5s all;
 }
 .button-type-1:hover {
@@ -287,11 +290,23 @@ header {
     outline: 0;
     box-shadow: none;
     border: 1px solid var(--basic-color);
-    border-radius: 50rem;
     transition: 0.5s all;
 }
 .button-type-2:hover {
     background-color: rgb(38, 179, 136) !important;
+}
+.button-type-3 {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid var(--forth-color);
+    transition: 0.8s all;
+}
+.button-type-3:hover {
+    color: var(--third-color) !important;
+    background-color: var(--forth-color) !important;
+}
+.progress {
+    height: 7px;
 }
 @keyframes writing-animation {
     0% {
@@ -346,13 +361,13 @@ header {
         content: "I'm Simone Olivi";
     }
     11.8% {
-        content: "I'm Simone Olivia";
+        content: "I'm Simone Olivia.";
     }
     12.5% {
         content: "I'm Simone Olivia.";
     }
     13.19% {
-        content: "I'm Simone Olivia";
+        content: "I'm Simone Olivia.";
     }
     13.8% {
         content: "I'm Simone Olivi";
@@ -454,7 +469,7 @@ header {
         content: "I'm a Freelance";
     }
     36.1% {
-        content: "I'm a Freelancer";
+        content: "I'm a Freelancer.";
     }
     36.8% {
         content: "I'm a Freelancer.";
@@ -568,13 +583,13 @@ header {
         content: "I'm a Photograph";
     }
     61.8% {
-        content: "I'm a Photographe";
+        content: "I'm a Photographer.";
     }
     62.5% {
         content: "I'm a Photographer.";
     }
     63.19% {
-        content: "I'm a Photographer";
+        content: "I'm a Photographer.";
     }
     63.8% {
         content: "I'm a Photographe";
@@ -755,7 +770,7 @@ header {
         opacity: 1;
     }
     50%{
-        top: 40px;
+        top: 120px;
         opacity: 0.2;
     }
     100%{
@@ -792,14 +807,14 @@ header {
     display: block;
     /* cursor: pointer; */
     position: relative;
-    width:  25px;
-    height: 25px;
+    width:  15px;
+    height: 15px;
     transform: rotateZ(45deg);
     /* background-color: var(--third-color); */
-    top: 10px;
+    top: 100px;
     border-right: 2px solid var(--third-color);
     border-bottom: 2px solid var(--third-color);
-    animation: arrow-move 1s steps(40) infinite;
+    animation: arrow-move 0.6s steps(40) infinite;
 }
 @media (max-width: 768px) {
     .show ul .nav-item .underline {
