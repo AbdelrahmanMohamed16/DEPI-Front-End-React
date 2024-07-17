@@ -28,7 +28,6 @@ a {
     text-decoration: none;
 }
 body {
-    height: 100vh;
     transition: 0.2s all ease;
 }
 header {
@@ -171,7 +170,7 @@ header {
     content: "ABOUT ME";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 8rem;
+    font-size: 6rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -185,7 +184,7 @@ header {
     content: "SERVICES";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 8rem;
+    font-size: 6rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -199,7 +198,7 @@ header {
     content: "SUMMARY";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 8rem;
+    font-size: 6rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -213,7 +212,7 @@ header {
     content: "PORTFOLIO";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 8rem;
+    font-size: 6rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -227,7 +226,7 @@ header {
     content: "TESTIMONIAL";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 7rem;
+    font-size: 5rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -241,7 +240,7 @@ header {
     content: "CONTACT";
     position: absolute;
     color: var(--secondary-color);
-    font-size: 8rem;
+    font-size: 6rem;
     opacity: 0.1;
     width: 100%;
     top: 50%;
@@ -276,7 +275,6 @@ i[class$="fa-circle"] {
     font-size: 15px;
     color: var(--basic-color);
 }
-
 .navbar div[class$="show"]{
     position: absolute;
     top: 100%;
@@ -287,7 +285,7 @@ i[class$="fa-circle"] {
 .active {
     color: var(--basic-color) !important;
 }
-.nav-item:hover a,.portfolio-section .filters li:hover {
+.nav-item:hover a,.portfolio-section .filters li:hover, footer a:hover {
     color: var(--basic-color) !important;
     cursor: pointer;
 }
@@ -295,7 +293,7 @@ i[class$="fa-circle"] {
     color: #11B1EE !important;
 }
 .fa-facebook-f:hover {
-    color: #0866FF !important;
+    color: #0666FF !important;
 }
 .fa-instagram:hover {
     color: #0866FF !important;
@@ -308,6 +306,9 @@ i[class$="fa-circle"] {
 }
 .fa-envelope:hover {
     color: #6567a5 !important;
+}
+.fa-github:hover {
+    color: #333 !important;
 }
 .button-type-1 {
     outline: 0;
@@ -869,40 +870,25 @@ i[class$="fa-circle"] {
         z-index: 3;
     }
     .about-section-title::before {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .what-section-title::before {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .resume-section-title::before {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .portfolio-section-title::before {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .client-section-title::before {
         font-size: 3rem;
     }
     .contact-section-title::before {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
-@media (max-width: 768px) {
-    .show ul .nav-item .underline {
-        position: relative;
-    }
-    .header-underline::after{
-        content: " ";
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 1px;
-        left: 0;
-        top: 100%;
-        background-color: var(--forth-color);
-        opacity: 0.3;
-        z-index: 3;
-    }
+@media (min-width: 768px) {
     .about-section-title::before {
         font-size: 6rem;
     }
@@ -950,4 +936,34 @@ i[class$="fa-circle"] {
 }
 .img:hover .text {
     opacity: 1;
+}
+.border-sixth-color {
+    border: 1px solid rgba(105, 101, 101, 0.5);
+}
+.fixed-arrow {
+    position: fixed;
+    right: 10px;
+    bottom: 8px;
+    width: 44px;
+    height: 44px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,0.2);
+    cursor: pointer;
+}
+.fixed-arrow::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid var(--sixth-color);
+    border-bottom: 2px solid var(--sixth-color);
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%) rotate(225deg);
+}
+.fixed-arrow:hover{
+    background-color: var(--basic-color) !important;
+}
+.fixed-arrow:hover::after{
+    border-color: var(--sixth-color);
 }
