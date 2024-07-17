@@ -272,21 +272,11 @@ header {
 i[class$="fa-circle"] {
     font-size: 12px;
 }
-.checked{
+.checked {
+    font-size: 15px;
     color: var(--basic-color);
-    position: relative;
 }
-.checked::after {
-    content: "";
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    left: 50%;
-    top: 45%;
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
-    border: 2px solid var(--basic-color);
-}
+
 .navbar div[class$="show"]{
     position: absolute;
     top: 100%;
