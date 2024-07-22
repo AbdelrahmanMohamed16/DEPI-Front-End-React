@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <section class="bg-info">
+      <div class="container py-5">
+        <div class="form py-5">
+          <h1 class="text-dark text-center">Products Form</h1>
+          <label for="productName" class="form-label fw-bold"
+            >Product Name</label
+          >
+          <input
+            type="text"
+            id="productName"
+            class="form-control mb-3"
+            placeholder="Product Name"
+          />
+          <label for="productPrice" class="form-label fw-bold"
+            >Product Price</label
+          >
+          <input
+            type="text"
+            id="productPrice"
+            class="form-control mb-3"
+            placeholder="Product Price"
+          />
+          <label for="productCat" class="form-label fw-bold">Product Category</label>
+          <input
+            type="text"
+            id="productCat"
+            class="form-control mb-3"
+            placeholder="Product Category"
+          />
+          <label for="productDes" class="form-label fw-bold">Product Description</label>
+          <input
+            type="text"
+            id="productDes"
+            class="form-control mb-3"
+            placeholder="Product Description"
+          />
+          <button class="btn btn-success" onclick="retrieveData();">Add Product</button>
+        </div>
+        <table class="table table-striped py-5">
+          <thead class="text-center fw-bold">
+            <tr>
+              <td>Product Name</td>
+              <td>Product Price</td>
+              <td>Product Category</td>
+              <td>Product Description</td>
+              <td>Actions</td>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="text-center fw-bold"></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
