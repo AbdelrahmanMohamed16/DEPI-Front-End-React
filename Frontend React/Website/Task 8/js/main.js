@@ -3,9 +3,21 @@ var productPrice = document.getElementById("productPrice");
 var productCat = document.getElementById("productCat");
 var productDes = document.getElementById("productDes");
 var tableBody = document.getElementById("tableBody");
+var addAndUpdateBtn = document.getElementById("addAndUpdateBtn");
+var currentIndex = 0;
 var productContainer = [];
 
-function retrieveData() {
+if(localStorage.getItem("products")) {
+    productContainer = JSON.parse(localStorage.getItem("products"));
+    displayData(productContainer);
+}
+
+function addProduct() {
+    if (addAndUpdateBtn.innerHTML == "Update Product") {
+        updateProduct(currentIndex);
+        clearInputs();
+        return;
+    }
     var name = productName.value;
     var price = productPrice.value;
     var category = productCat.value;
@@ -17,9 +29,9 @@ function retrieveData() {
         description: description,
     }
     productContainer.push(product);
+    localStorage.setItem("products",JSON.stringify(productContainer));
     clearInputs();
-    createRows();
-    displayData();
+    displayData(productContainer);
 };
 
 function clearInputs() {
@@ -27,28 +39,71 @@ function clearInputs() {
     productPrice.value = "";
     productCat.value = "";
     productDes.value = "";
-}
+};
 
-var box = "";
-
-function createRows() {
-    box = "";
-    for (let i = 0; i < productContainer.length; i++) {
+function displayData(data) {
+    var box = "";
+    for (let i = 0; i < data.length; i++) {
         box += `
             <tr>
-                <td>${productContainer[i].name}</td>
-                <td>${productContainer[i].price}</td>
-                <td>${productContainer[i].category}</td>
-                <td>${productContainer[i].description}</td>
+                <td>${i+1}</td>
+                <td>${data[i].name}</td>
+                <td>${data[i].price}</td>
+                <td>${data[i].category}</td>
+                <td>${data[i].description}</td>
                 <td>
-                    <button class="btn btn-danger">Delete</button>
-                    <button class="btn btn-success">Update</button>
+                    <button class="btn btn-danger" onclick="deleteProduct(${i});">Delete</button>
+                    <button class="btn btn-warning" onclick="retrieveProductData(${i});">Update</button>
                 </td>
             </tr>
         `;
     }
+    tableBody.innerHTML = box;
+};
+
+function deleteProduct(index) {
+    console.log(index);
+    productContainer.splice(index,1);
+    localStorage.setItem("products",JSON.stringify(productContainer));
+    displayData(productContainer);
+};
+
+function updateProduct(index) {
+    currentIndex = index;
+    product = {
+        name: productName.value,
+        price: productPrice.value,
+        category: productCat.value,
+        description: productDes.value,
+    }
+    productContainer[index] = product;
+    localStorage.setItem("products",JSON.stringify(productContainer));
+    displayData(productContainer);
+    addAndUpdateBtn.innerHTML = "Add Product";
+};
+
+function retrieveProductData(index) {
+    addAndUpdateBtn.innerHTML = "Update Product";
+    product = productContainer[index];
+    productName.value = product.name;
+    productPrice.value = product.price;
+    productCat.value = product.category;
+    productDes.value = product.description;
+};
+
+function search(name) {
+    console.log(name);
+    filteredProducts = [];
+    for (let i = 0; i < productContainer.length; i++) {
+        if(productContainer[i].name.toLowerCase().includes(name.toLowerCase())) {
+            filteredProducts.push(productContainer[i]);
+        }
+    }
+    displayData(filteredProducts);
 }
 
-function displayData(){
-    tableBody.innerHTML = box;
-}
+function deleteAll() {
+    localStorage.setItem("products","[]");
+    productContainer = [];
+    displayData(productContainer);
+};
