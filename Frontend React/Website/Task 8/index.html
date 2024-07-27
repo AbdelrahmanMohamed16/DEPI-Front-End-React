@@ -21,6 +21,7 @@
             id="productName"
             class="form-control mb-3"
             placeholder="Product Name"
+            oninput="validateData(this, this.value,/^[A-Z][a-z]{3,}$/);"
           />
           <label for="productPrice" class="form-label fw-bold"
             >Product Price</label
@@ -30,28 +31,46 @@
             id="productPrice"
             class="form-control mb-3"
             placeholder="Product Price"
+            oninput="validateData(this, this.value, /^[0-9]{1,}$/);"
           />
-          <label for="productCat" class="form-label fw-bold">Product Category</label>
+          <label for="productCat" class="form-label fw-bold"
+            >Product Category</label
+          >
           <input
             type="text"
             id="productCat"
             class="form-control mb-3"
             placeholder="Product Category"
+            oninput="validateData(this, this.value,/^[A-Z][a-z]{3,}$/);"
           />
-          <label for="productDes" class="form-label fw-bold">Product Description</label>
+          <label for="productDes" class="form-label fw-bold"
+            >Product Description</label
+          >
           <input
             type="text"
             id="productDes"
             class="form-control mb-3"
             placeholder="Product Description"
+            oninput="validateData(this, this.value,/^[A-Z][a-z]{3,}$/);"
           />
-          <button class="btn btn-success" id="addAndUpdateBtn" onclick="addProduct();">Add Product</button>
+          <button
+            class="btn btn-success"
+            id="addAndUpdateBtn"
+            onclick="action();"
+          >Add Product</button>
         </div>
         <div class="d-flex justify-content-center">
-          <input class="form-control w-75" type="text" placeholder="Search" oninput="search(this.value);">
+          <input
+            class="form-control w-75"
+            type="text"
+            placeholder="Search"
+            oninput="search(this.value);"
+          />
         </div>
         <div class="d-flex justify-content-end my-3">
-          <button class="btn btn-dark" onclick="deleteAll();">Delete All</button>
+          <button class="btn btn-dark" onclick="deleteAll();">
+            Delete All
+          </button>
         </div>
         <table class="table table-striped py-5">
           <thead class="text-center fw-bold">
