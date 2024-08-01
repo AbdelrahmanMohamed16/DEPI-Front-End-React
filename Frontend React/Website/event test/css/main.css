@@ -1,0 +1,211 @@
+:root{
+    --basic-color: #20C997;
+    --secondary-color: #212529;
+    --third-color: #FFFFFF;
+    --forth-color: #6C757D;
+    --fifth-color: #DC3545;
+    --sixth-color: #F8F9FA; 
+    --text-1: 1rem;
+    --text-2: 1.25rem;
+    --text-3: 1.75rem;
+    --text-4: 2rem;
+    --text-5: 2.25rem;
+    --text-6: 2.75rem;
+    --text-7: 3rem;
+    --text-8: 3.5rem;
+}
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    cursor: none;
+}
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-image: url("../imgs/intro-bg.jpg");
+    transition: 0.2s all ease;
+    overflow: hidden;
+}
+header {
+    background-color: transparent;
+    transition: 1s all;
+}
+.basic-color {
+    color: var(--basic-color) !important;
+}
+.secondary-color {
+    color: var(--secondary-color) !important;
+}
+.third-color {
+    color: var(--third-color) !important;
+}
+.forth-color {
+    color: var(--forth-color) !important;
+}
+.fifth-color {
+    color: var(--fifth-color) !important;
+}
+.sixth-color {
+    color: var(--sixth-color) !important;
+}
+.bg-basic-color {
+    background-color: var(--basic-color) !important;
+}
+.bg-secondary-color {
+    background-color: var(--secondary-color) !important;
+}
+.bg-third-color {
+    background-color: var(--third-color) !important;
+}
+.bg-forth-color {
+    background-color: var(--forth-color) !important;
+}
+.bg-fifth-color {
+    background-color: var(--fifth-color) !important;
+}
+.bg-sixth-color {
+    background-color: var(--sixth-color) !important;
+}
+.text-1 {
+    font-size: var(--text-1) !important;
+    font-weight: 400 !important;
+}
+.text-2 {
+    font-size: var(--text-2) !important;
+    font-weight: 400 !important;
+}
+.text-3 {
+    font-size: var(--text-3) !important;
+    font-weight: 400 !important;
+}
+.text-4 {
+    font-size: var(--text-4) !important;
+    font-weight: 500 !important;
+}
+.text-5 {
+    font-size: var(--text-5) !important;
+    font-weight: 600 !important;
+}
+.text-6 {
+    font-size: var(--text-6) !important;
+    font-weight: 700 !important;
+}
+.text-7 {
+    font-size: var(--text-7) !important;
+    font-weight: 800 !important;
+}
+.text-8 {
+    font-size: var(--text-8) !important;
+    font-weight: 900 !important;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.header-underline {
+    position: relative;
+}
+.header-underline::after{
+    content: " ";
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 100%;
+    background-color: var(--forth-color);
+    opacity: 0.3;
+    z-index: 3;
+}
+.underline {
+    position: relative;
+}
+.underline::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 110%;
+    background-color: var(--forth-color);
+    opacity: 0.3;
+    z-index: 2;
+}
+.navbar-toggler {
+    box-shadow: none !important;
+}
+i[class$="fa-circle"] {
+    font-size: 12px;
+}
+.checked {
+    font-size: 15px;
+    color: var(--basic-color);
+}
+.navbar div[class$="show"]{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: var(--secondary-color);
+}
+.active {
+    color: var(--basic-color) !important;
+}
+.nav-item:hover a,.portfolio-section .filters li:hover, footer a:hover {
+    color: var(--basic-color) !important;
+    cursor: pointer;
+}
+.fa-twitter:hover {
+    color: #11B1EE !important;
+}
+.fa-facebook-f:hover {
+    color: #0666FF !important;
+}
+.fa-instagram:hover {
+    color: #0866FF !important;
+}
+.fa-dribbble:hover {
+    color: #EA4C89 !important;
+}
+.fa-google:hover {
+    color: #EA4C89 !important;
+}
+.fa-envelope:hover {
+    color: #6567a5 !important;
+}
+.fa-github:hover {
+    color: #333 !important;
+}
+@media (max-width: 575px) {
+    .show ul .nav-item .underline {
+        position: relative;
+    }
+    .header-underline::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 100%;
+        background-color: var(--forth-color);
+        opacity: 0.3;
+        z-index: 3;
+    }
+}
+.cursor {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    transform: rotateZ(-45deg);
+}
