@@ -49,8 +49,13 @@ export default class EditableCard extends Component {
                             <path d="M14.5 23H31M31 23L24 16M31 23L24 30" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                         </svg>
                     </div>
-                    <button type='submit' className="btn btn-outline-success" onClick={()=>{
-                        this.props.addTask()
+                    <button type='submit' className="btn btn-outline-success actionBtn" onClick={()=>{
+                        if(this.props.actionBtn.innerHTML === "Add Task"){
+                            this.props.addTask()
+                        }
+                        else if (this.props.actionBtn.innerHTML === "Update Task"){
+                            this.props.updateTask()
+                        }
                         }
                     }>Add Task</button>
                 </div>

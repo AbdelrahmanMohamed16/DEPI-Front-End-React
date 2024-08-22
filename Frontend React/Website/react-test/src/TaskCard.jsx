@@ -10,6 +10,9 @@ export default class TaskCard extends Component {
         <button type='button' className='btn btn-outline-danger' onClick={()=>{
           this.props.deleteTask(this.props.index)
         }}>Delete</button>
+        <button type='button' className='btn btn-outline-warning' onClick={()=>{
+          this.props.getTaskData(this.props.index)
+        }}>Update</button>
       </>
     )
   }
