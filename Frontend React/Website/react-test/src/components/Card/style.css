@@ -1,8 +1,8 @@
 .card {
-    height: 600px;
-    overflow: auto;
+  height: 600px !important;
+  overflow: auto !important;
 }
 
 .card img {
-    height: 400px;
+  height: 400px !important;
 }

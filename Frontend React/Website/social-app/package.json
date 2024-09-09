@@ -1,5 +1,5 @@
 {
-  "name": "react-test",
+  "name": "social-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,8 +7,13 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.5",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.2",
+    "joi": "^17.13.3",
+    "jwt-decode": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.26.1",
