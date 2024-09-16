@@ -4,7 +4,13 @@ import "@fortawesome/fontawesome-free";
 import { AuthContext } from "../Store/AuthContextProvider";
 
 export default function Navbar() {
-  let { token } = useContext(AuthContext);
+  let { token, setToken } = useContext(AuthContext);
+
+  function logout() {
+    setToken(null);
+    localStorage.removeItem("Token");
+  }
+
   return (
     <nav className="navbar navbar-expand-lg bg-transparent navbar-dark">
       <div className="container">
@@ -74,7 +80,7 @@ export default function Navbar() {
                 </li>
               </>
             )}
-            {!token && (
+            {!token ? (
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="login">
@@ -87,6 +93,12 @@ export default function Navbar() {
                   </Link>
                 </li>
               </>
+            ) : (
+              <li className="nav-item">
+                <Link className="nav-link" to="/login" onClick={logout}>
+                  LogOut
+                </Link>
+              </li>
             )}
           </ul>
         </div>

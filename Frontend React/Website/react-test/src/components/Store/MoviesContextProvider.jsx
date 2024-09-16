@@ -13,7 +13,6 @@ export default function MoviesContextProvider(props) {
       )
       .then(({ data: { results } }) => {
         setMoviesData(results);
-        console.log(results);
         setStatus("done");
       })
       .catch((err) => {

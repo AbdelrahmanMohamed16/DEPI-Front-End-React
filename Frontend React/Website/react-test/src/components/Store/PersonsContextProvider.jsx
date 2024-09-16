@@ -13,7 +13,6 @@ export default function PersonsContextProvider(props) {
       )
       .then(({ data: { results } }) => {
         setPersonsData(results);
-        console.log(results);
         setStatus("done");
       })
       .catch((err) => {
