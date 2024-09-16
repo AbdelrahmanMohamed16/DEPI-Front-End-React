@@ -1,0 +1,22 @@
+.text {
+  position: relative;
+}
+
+.text::before {
+  content: " ";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  top: -20px;
+  background-color: #363942;
+}
+
+.text::after {
+  content: " ";
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: #363942;
+  left: 0;
+  bottom: -20px;
+}

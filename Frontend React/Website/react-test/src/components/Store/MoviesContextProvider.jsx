@@ -1,14 +1,11 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
-import { Navigate, useNavigate } from "react-router";
-import Card from "../Card";
-import Loading from "../Loading";
+import React, { useState, createContext, useEffect } from "react";
 
-export default function Home() {
+export let MoviesContext = createContext(0);
+
+export default function MoviesContextProvider(props) {
   let [moviesData, setMoviesData] = useState([]);
   let [status, setStatus] = useState("none");
-  let navigate = useNavigate();
-
   let getMovies = async function () {
     await axios
       .get(
@@ -16,6 +13,7 @@ export default function Home() {
       )
       .then(({ data: { results } }) => {
         setMoviesData(results);
+        console.log(results);
         setStatus("done");
       })
       .catch((err) => {
@@ -27,12 +25,9 @@ export default function Home() {
   useEffect(() => {
     getMovies();
   }, []);
-
-  return status === "error" ? (
-    navigate("error")
-  ) : status === "none" ? (
-    <Loading />
-  ) : (
-    moviesData.map((movie) => <Card movie={movie} key={movie.id} />)
+  return (
+    <MoviesContext.Provider value={{ moviesData, status }}>
+      {props.children}
+    </MoviesContext.Provider>
   );
 }

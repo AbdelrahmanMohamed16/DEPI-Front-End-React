@@ -3,6 +3,7 @@ import Assignment2 from "./components/Assignment2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Assignment3 from "./components/Assignment3";
 import { BrowserRouter } from "react-router-dom";
+import AuthContextProvider from "./components/Store/AuthContextProvider";
 
 export default function App() {
   return (
@@ -10,7 +11,9 @@ export default function App() {
       {/* <Assignment1 />
       <Assignment2 /> */}
       <BrowserRouter>
-        <Assignment3 />
+        <AuthContextProvider>
+          <Assignment3 />
+        </AuthContextProvider>
       </BrowserRouter>
     </>
   );

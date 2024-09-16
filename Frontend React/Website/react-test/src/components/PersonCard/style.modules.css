@@ -1,0 +1,9 @@
+.person_card {
+  height: 430px !important;
+  background-color: #131722 !important;
+  color: white !important;
+}
+
+.person_card img {
+  height: 350px !important;
+}
